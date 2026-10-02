@@ -1,0 +1,14 @@
+# Python 3.10
+
+# Index and retrieval
+qdrant-client>=1.10
+fastembed>=0.3
+sentence-transformers==4.0.2
+pandas>=2.0
+numpy>=1.24
+openpyxl>=3.1
+
+# Reranking and LLM selection
+torch>=2.0
+transformers>=4.51     # Qwen3 support
+accelerate>=1.0        # device_map="auto"

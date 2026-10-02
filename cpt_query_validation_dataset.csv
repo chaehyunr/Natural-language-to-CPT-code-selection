@@ -1,0 +1,146 @@
+﻿ID,Query,Category,Complexity,Has Exclusion,Included Code Count,Included CPT Codes,Excluded CPT Codes,Notes
+1,Primary total knee arthroplasty (TKA),Orthopedics - Joint Arthroplasty,Simple,N,1,27447,,Single code captures the standard primary TKA (medial AND lateral compartments).
+2,Unicompartmental knee arthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,27446,,Medial OR lateral compartment only (unicondylar).
+3,All primary knee arthroplasty (unicompartmental + total),Orthopedics - Joint Arthroplasty,Simple,N,2,"27446, 27447",,"Excludes tibial-plateau and hinge prostheses, which are not standard primary TKA in modern practice."
+4,"All knee arthroplasty procedures (any type, any indication)",Orthopedics - Joint Arthroplasty,Medium,N,7,"27440, 27445, 27446, 27447, 27486, 27487, 27488",,"Includes tibial plateau, hinge, uni, total, revision (1-component and full), and prosthesis removal."
+5,All knee arthroplasty excluding revision and removal,Orthopedics - Joint Arthroplasty,Medium,Y,4,"27440, 27445, 27446, 27447","27486, 27487, 27488",Primary procedures only; revisions (27486/27487) and explant (27488) excluded.
+6,Revision total knee arthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,2,"27486, 27487",,"1-component or full femoral+tibial revision. 27488 is prosthesis removal/spacer, not a revision arthroplasty."
+7,"Knee prosthesis removal (e.g., for infection / spacer placement)",Orthopedics - Joint Arthroplasty,Simple,N,1,27488,,Explant with or without antibiotic spacer.
+8,Primary total hip arthroplasty (THA),Orthopedics - Joint Arthroplasty,Simple,N,1,27130,,Standard primary THA (acetabular + femoral replacement).
+9,Hip hemiarthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,27125,,"Partial hip (e.g., bipolar, femoral stem) - typically for fracture."
+10,All primary hip arthroplasty (hemi + total),Orthopedics - Joint Arthroplasty,Simple,N,2,"27125, 27130",,Excludes conversion and revision.
+11,Revision total hip arthroplasty (any component),Orthopedics - Joint Arthroplasty,Simple,N,3,"27134, 27137, 27138",,"Both-component, acetabular-only, or femoral-only revision."
+12,All hip arthroplasty (primary + conversion + revision),Orthopedics - Joint Arthroplasty,Medium,N,6,"27125, 27130, 27132, 27134, 27137, 27138",,"Includes hemi, THA, conversion of prior hip surgery to THA, and all revisions."
+13,All hip arthroplasty excluding revision,Orthopedics - Joint Arthroplasty,Simple,Y,3,"27125, 27130, 27132","27134, 27137, 27138",Primaries plus conversion; revisions removed.
+14,Conversion of prior hip surgery to total hip arthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,27132,,Conversion arthroplasty - distinct from primary and revision.
+15,Primary total joint arthroplasty (hip + knee),Orthopedics - Joint Arthroplasty,Simple,N,2,"27130, 27447",,Standard primary TJA cohort - the typical NSQIP TJA study population.
+16,"All total joint arthroplasty (hip + knee), excluding revisions",Orthopedics - Joint Arthroplasty,Medium,Y,4,"27125, 27130, 27446, 27447","27132, 27134, 27137, 27138, 27486, 27487, 27488","Primaries only - hemi, THA, uni, TKA. Conversions and revisions excluded."
+17,All total joint arthroplasty including revisions,Orthopedics - Joint Arthroplasty,Complex,N,13,"27125, 27130, 27132, 27134, 27137, 27138, 27440, 27445, 27446, 27447, 27486, 27487, 27488",,"Comprehensive TJA cohort - hip + knee, primary + revision."
+18,"All major joint arthroplasty (hip, knee, shoulder, ankle, elbow)",Orthopedics - Joint Arthroplasty,Complex,N,19,"23470, 23472, 23473, 23474, 24362, 24363, 27125, 27130, 27132, 27134, 27137, 27138, 27446, 27447, 27486, 27487, 27488, 27702, 27703",,"All 5 major joints, primary + revision arthroplasty. Excludes minor / radial head."
+19,"All primary major joint arthroplasty (hip, knee, shoulder, ankle, elbow)",Orthopedics - Joint Arthroplasty,Medium,Y,9,"23470, 23472, 24362, 24363, 27125, 27130, 27446, 27447, 27702","23473, 23474, 27132, 27134, 27137, 27138, 27486, 27487, 27488, 27703, 27704","Primaries across all 5 joints; conversions, revisions, and removals excluded."
+20,Total shoulder arthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,23472,,Anatomic total shoulder (glenoid + proximal humerus replacement). Reverse TSA shares this CPT.
+21,Shoulder hemiarthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,23470,,Glenohumeral hemiarthroplasty.
+22,All shoulder arthroplasty (primary + revision),Orthopedics - Joint Arthroplasty,Medium,N,4,"23470, 23472, 23473, 23474",,"Hemi, total, and 1- or 2-component revisions."
+23,All shoulder arthroplasty excluding revision,Orthopedics - Joint Arthroplasty,Simple,Y,2,"23470, 23472","23473, 23474",Primary only.
+24,Total ankle arthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,27702,,Ankle arthroplasty with implant.
+25,All ankle arthroplasty (primary + revision),Orthopedics - Joint Arthroplasty,Simple,N,3,"27700, 27702, 27703",,"Without implant (27700), with implant (27702), and revision (27703)."
+26,Total elbow arthroplasty,Orthopedics - Joint Arthroplasty,Simple,N,1,24363,,Distal humerus + proximal ulna replacement (total elbow).
+27,Hip fracture surgery - femoral neck fracture,Orthopedics - Trauma,Simple,N,2,"27235, 27236",,Percutaneous fixation and open treatment (ORIF or prosthetic replacement) of femoral neck fx.
+28,Hip fracture surgery - intertrochanteric/peritrochanteric/subtrochanteric,Orthopedics - Trauma,Simple,N,2,"27244, 27245",,Plate/screw vs intramedullary nail constructs.
+29,All operative hip fracture treatment (any proximal femur location),Orthopedics - Trauma,Medium,N,7,"27125, 27235, 27236, 27244, 27245, 27248, 27269",,"Includes hemiarthroplasty for fracture, neck ORIF/percutaneous, IT/sub-T fixation, GT ORIF, and femoral head fx ORIF."
+30,Operative hip fracture treatment excluding arthroplasty,Orthopedics - Trauma,Medium,Y,6,"27235, 27236, 27244, 27245, 27248, 27269",27125,Internal fixation only - hemiarthroplasty for fracture removed.
+31,"Anterior cervical discectomy and fusion (ACDF), single level",Orthopedics - Spine,Simple,N,1,22551,,"Anterior interbody fusion with decompression, cervical below C2 (single level)."
+32,"Anterior cervical fusion, multi-level (single + additional)",Orthopedics - Spine,Simple,N,2,"22551, 22552",,Index level + add-on for each additional interspace.
+33,"Posterior cervical fusion (single level, C1-C2 and below)",Orthopedics - Spine,Simple,N,3,"22590, 22595, 22600",,"Occiput-C2, atlas-axis, and posterior cervical below C2."
+34,All cervical spine fusion (anterior + posterior),Orthopedics - Spine,Medium,N,7,"22548, 22551, 22552, 22554, 22590, 22595, 22600",,"Includes anterior transoral, ACDF, anterior interbody without decompression, and all posterior cervical fusion."
+35,"Anterior lumbar interbody fusion (ALIF), single level",Orthopedics - Spine,Simple,N,1,22558,,"Anterior interbody, lumbar, single interspace."
+36,"Posterolateral lumbar fusion, single level",Orthopedics - Spine,Simple,N,1,22612,,"Posterior/posterolateral, lumbar, single level (the classic PLF)."
+37,"Posterior lumbar interbody fusion (PLIF), single level",Orthopedics - Spine,Simple,N,1,22630,,"Posterior interbody, lumbar, single interspace."
+38,"Combined posterior + interbody lumbar fusion (TLIF/PLIF + PLF), single level",Orthopedics - Spine,Simple,N,1,22633,,"The ""360"" / TLIF code - combined posterior + interbody at the same level."
+39,All single-level lumbar fusion (any approach),Orthopedics - Spine,Medium,N,4,"22558, 22612, 22630, 22633",,"ALIF, PLF, PLIF, and combined posterior+interbody."
+40,"All lumbar fusion (index + additional levels, any approach)",Orthopedics - Spine,Medium,N,10,"22533, 22534, 22558, 22585, 22612, 22614, 22630, 22632, 22633, 22634",,"Single-level codes plus all ""each additional level"" add-ons for lumbar."
+41,"All spine fusion procedures (cervical, thoracic, lumbar - any approach)",Orthopedics - Spine,Complex,N,20,"22532, 22533, 22534, 22548, 22551, 22552, 22554, 22556, 22558, 22585, 22590, 22595, 22600, 22610, 22612, 22614, 22630, 22632, 22633, 22634",,Comprehensive arthrodesis cohort across all spinal regions and approaches.
+42,"Cervical disc arthroplasty (artificial disc, anterior)",Orthopedics - Spine,Simple,N,1,22856,,"Total disc arthroplasty, anterior approach, cervical."
+43,"Lumbar disc arthroplasty (artificial disc, anterior)",Orthopedics - Spine,Simple,N,1,22858,,"Total disc arthroplasty, anterior approach, lumbar/lumbosacral."
+44,All disc arthroplasty (cervical + lumbar),Orthopedics - Spine,Simple,N,2,"22856, 22858",,Both regions.
+45,Lumbar laminectomy for spinal stenosis (1-2 levels),Orthopedics - Spine,Simple,N,2,"63005, 63047",,Pure laminectomy (63005) and laminectomy+facetectomy+foraminotomy (63047).
+46,Lumbar microdiscectomy / laminotomy (1 interspace),Orthopedics - Spine,Simple,N,1,63030,,"Laminotomy with decompression of nerve root and disc excision, lumbar, 1 interspace."
+47,"All lumbar decompression (laminectomy + laminotomy, primary and reexploration)",Orthopedics - Spine,Medium,N,7,"63005, 63012, 63017, 63030, 63042, 63047, 63048",,"Includes spinal stenosis decompression, Gill procedure, multi-level, and reexplorations."
+48,Cervical laminectomy / laminoplasty for decompression,Orthopedics - Spine,Medium,N,5,"63001, 63015, 63045, 63050, 63051",,"Cervical laminectomy 1-2 segments, >2 segments, lam+fac+for, and laminoplasty with/without reconstruction."
+49,All spine decompression procedures (no fusion implied),Orthopedics - Spine,Complex,N,21,"63001, 63003, 63005, 63011, 63012, 63015, 63016, 63017, 63020, 63030, 63035, 63040, 63042, 63043, 63044, 63045, 63046, 63047, 63048, 63050, 63051",,"All laminectomy/laminotomy/laminoplasty codes - cervical, thoracic, lumbar, sacral."
+50,All surgical spine procedures,Orthopedics - Spine,Complex,N,45,"22532, 22533, 22534, 22548, 22551, 22552, 22554, 22556, 22558, 22585, 22590, 22595, 22600, 22610, 22612, 22614, 22630, 22632, 22633, 22634, 22856, 22858, 22859, 22864, 63001, 63003, 63005, 63011, 63012, 63015, 63016, 63017, 63020, 63030, 63035, 63040, 63042, 63043, 63044, 63045, 63046, 63047, 63048, 63050, 63051",,Fusion + disc arthroplasty + interbody device + decompression. Broad spine cohort.
+51,All surgical spine procedures excluding fusion,Orthopedics - Spine,Complex,Y,25,"22856, 22858, 22859, 22864, 63001, 63003, 63005, 63011, 63012, 63015, 63016, 63017, 63020, 63030, 63035, 63040, 63042, 63043, 63044, 63045, 63046, 63047, 63048, 63050, 63051","22532, 22533, 22534, 22548, 22551, 22552, 22554, 22556, 22558, 22585, 22590, 22595, 22600, 22610, 22612, 22614, 22630, 22632, 22633, 22634",Decompression + disc arthroplasty only; all arthrodesis codes removed.
+52,Arthroscopic ACL reconstruction,Orthopedics - Sports,Simple,N,1,29888,,Single code.
+53,Arthroscopic cruciate ligament reconstruction (ACL + PCL),Orthopedics - Sports,Simple,N,2,"29888, 29889",,Both knees ligaments.
+54,Arthroscopic meniscectomy (medial or lateral or both),Orthopedics - Sports,Simple,N,2,"29880, 29881",,Medial AND lateral (29880) and medial OR lateral (29881).
+55,Arthroscopic meniscus repair,Orthopedics - Sports,Simple,N,2,"29882, 29883",,"Medial OR lateral, and medial AND lateral."
+56,All knee arthroscopy (surgical),Orthopedics - Sports,Complex,N,17,"29871, 29873, 29874, 29875, 29876, 29877, 29879, 29880, 29881, 29882, 29883, 29884, 29885, 29886, 29887, 29888, 29889",,Excludes pure diagnostic arthroscopy (29870).
+57,Open rotator cuff repair,Orthopedics - Sports,Simple,N,3,"23410, 23412, 23420",,"Acute, chronic, and complete cuff avulsion reconstruction (open)."
+58,Arthroscopic rotator cuff repair,Orthopedics - Sports,Simple,N,1,29827,,Single arthroscopic code.
+59,All rotator cuff repair (open + arthroscopic),Orthopedics - Sports,Medium,N,4,"23410, 23412, 23420, 29827",,Open and arthroscopic cuff repair.
+60,Surgical shoulder arthroscopy (any indication),Orthopedics - Sports,Complex,N,12,"29806, 29807, 29819, 29820, 29821, 29822, 29823, 29824, 29825, 29826, 29827, 29828",,Excludes pure diagnostic shoulder arthroscopy (29805).
+61,"Coronary artery bypass grafting (CABG), vein only",Cardiac,Medium,N,4,"33510, 33511, 33512, 33513",,1 through 4+ vein grafts. Excludes arterial-only and combined codes.
+62,CABG using arterial grafts only,Cardiac,Medium,N,4,"33533, 33534, 33535, 33536",,1 through 4+ arterial grafts.
+63,All CABG (vein + arterial + combined),Cardiac,Complex,N,13,"33510, 33511, 33512, 33513, 33533, 33534, 33535, 33536, 33517, 33518, 33519, 33521, 33522",,"Vein-only, arterial-only, and combined (add-on) CABG codes."
+64,CABG primary cases only (excluding reoperation add-on),Cardiac,Medium,Y,8,"33510, 33511, 33512, 33513, 33533, 33534, 33535, 33536",33530,33530 is the reop add-on (>1 month after original op) and is excluded.
+65,Transcatheter aortic valve replacement (TAVR/TAVI),Cardiac,Medium,N,7,"33361, 33362, 33363, 33364, 33365, 33366, 33368",,"All TAVR access approaches: femoral percutaneous/open, axillary, iliac, transaortic, transapical, with CPB support."
+66,"TAVR, percutaneous femoral approach only",Cardiac,Simple,N,1,33361,,The most common TAVR access.
+67,"Surgical aortic valve replacement (SAVR, open)",Cardiac,Simple,N,3,"33405, 33406, 33410",,"Prosthetic, allograft, and stentless tissue valve, open with CPB."
+68,All aortic valve replacement (surgical + transcatheter),Cardiac,Medium,N,10,"33361, 33362, 33363, 33364, 33365, 33366, 33368, 33405, 33406, 33410",,SAVR + TAVR combined cohort.
+69,Mitral valve replacement,Cardiac,Simple,N,1,33430,,Open mitral valve replacement with CPB.
+70,Surgical mitral valve repair,Cardiac,Simple,N,3,"33425, 33426, 33427",,"Valvuloplasty without ring, with prosthetic ring, and radical reconstruction."
+71,Transcatheter mitral valve repair,Cardiac,Simple,N,2,"33418, 33419",,"Percutaneous mitral repair, initial and additional prosthesis."
+72,"All mitral valve surgery (repair + replacement, open + transcatheter)",Cardiac,Medium,N,7,"33418, 33419, 33422, 33425, 33426, 33427, 33430",,"Includes open valvotomy, valvuloplasty, replacement, and transcatheter repair."
+73,Open appendectomy,General Surgery,Simple,N,2,"44950, 44960",,Standard open and open for ruptured/perforated. Excludes the add-on code 44955 (incidental).
+74,Laparoscopic appendectomy,General Surgery,Simple,N,1,44970,,Single code.
+75,All appendectomy (open + laparoscopic),General Surgery,Simple,N,3,"44950, 44960, 44970",,"Open primary, open for rupture, and lap."
+76,Open cholecystectomy,General Surgery,Medium,N,5,"47600, 47605, 47610, 47612, 47620",,Includes with cholangiography and with CBD exploration.
+77,Laparoscopic cholecystectomy,General Surgery,Simple,N,3,"47562, 47563, 47564",,Includes lap with cholangiography and with CBD exploration.
+78,All cholecystectomy (open + laparoscopic),General Surgery,Medium,N,8,"47562, 47563, 47564, 47600, 47605, 47610, 47612, 47620",,All approaches.
+79,Open partial colectomy,General Surgery,Medium,N,8,"44140, 44141, 44143, 44144, 44145, 44146, 44147, 44160",,Any anastomosis configuration; Hartmann; transanal; ileocolic.
+80,Open total / subtotal colectomy,General Surgery,Simple,N,3,"44150, 44155, 44158",,"With ileostomy, with proctectomy, or with IPAA."
+81,All open colectomy,General Surgery,Complex,N,11,"44140, 44141, 44143, 44144, 44145, 44146, 44147, 44150, 44155, 44158, 44160",,"Partial + total + subtotal, open approach."
+82,All laparoscopic colectomy,General Surgery,Medium,N,8,"44204, 44205, 44206, 44207, 44208, 44210, 44211, 44212",,Excludes 44213 which is the splenic flexure takedown add-on.
+83,"All colectomy (open + laparoscopic, any extent)",General Surgery,Complex,N,19,"44140, 44141, 44143, 44144, 44145, 44146, 44147, 44150, 44155, 44158, 44160, 44204, 44205, 44206, 44207, 44208, 44210, 44211, 44212",,Most inclusive colectomy cohort.
+84,Sleeve gastrectomy,General Surgery,Simple,N,1,43775,,Laparoscopic sleeve gastrectomy.
+85,Roux-en-Y gastric bypass (laparoscopic),General Surgery,Simple,N,2,"43644, 43645",,Lap RYGB (standard and with small bowel reconstruction for malabsorption).
+86,All bariatric surgery (laparoscopic),General Surgery,Medium,N,7,"43644, 43645, 43770, 43771, 43772, 43774, 43775",,"Sleeve, bypass, and adjustable gastric band placement/revision/removal."
+87,Adjustable gastric band procedures only,General Surgery,Medium,N,4,"43770, 43771, 43772, 43774",,"Placement, revisions, and removals of LAGB."
+88,"Initial inguinal hernia repair, open (adults)",General Surgery,Simple,N,2,"49505, 49507",,"Age 5+, reducible or incarcerated. Excludes infant/preterm codes."
+89,"Initial inguinal hernia repair, laparoscopic",General Surgery,Simple,N,1,49650,,Single code.
+90,Recurrent inguinal hernia repair (open + laparoscopic),General Surgery,Simple,N,3,"49520, 49521, 49651",,Open reducible/incarcerated and lap recurrent.
+91,"All inguinal hernia repair (open + lap, initial + recurrent, adults)",General Surgery,Medium,N,7,"49505, 49507, 49520, 49521, 49525, 49650, 49651",,Excludes pediatric/infant codes (49491-49501).
+92,Open ventral / incisional hernia repair,General Surgery,Medium,N,4,"49560, 49561, 49565, 49566",,"Initial and recurrent, reducible and incarcerated. Mesh code 49568 is add-on."
+93,Laparoscopic ventral / incisional hernia repair,General Surgery,Medium,N,6,"49652, 49653, 49654, 49655, 49656, 49657",,"Lap ventral/umbilical/spigelian/epigastric + lap incisional, initial and recurrent."
+94,All ventral/incisional hernia repair (open + lap),General Surgery,Medium,N,10,"49560, 49561, 49565, 49566, 49652, 49653, 49654, 49655, 49656, 49657",,Comprehensive ventral hernia cohort.
+95,Umbilical hernia repair (adult),General Surgery,Simple,N,2,"49585, 49587",,"Age 5+, reducible or incarcerated."
+96,"All hernia repair (inguinal, femoral, ventral, umbilical, incisional - open + lap, adults)",General Surgery,Complex,N,27,"49505, 49507, 49520, 49521, 49525, 49540, 49550, 49553, 49555, 49557, 49560, 49561, 49565, 49566, 49570, 49572, 49585, 49587, 49590, 49650, 49651, 49652, 49653, 49654, 49655, 49656, 49657",,All adult abdominal wall hernia repairs across all anatomy and approaches.
+97,All hernia repair excluding recurrent,General Surgery,Complex,Y,17,"49505, 49507, 49525, 49540, 49550, 49553, 49560, 49561, 49570, 49572, 49585, 49587, 49590, 49650, 49652, 49653, 49654","49520, 49521, 49555, 49557, 49565, 49566, 49651, 49656, 49657",Initial / primary repairs only; recurrent codes removed.
+98,Whipple procedure (pancreaticoduodenectomy),General Surgery,Medium,N,4,"48150, 48152, 48153, 48154",,"Classic Whipple and pylorus-sparing variants, with and without pancreatojejunostomy."
+99,Distal pancreatectomy,General Surgery,Simple,N,2,"48140, 48146",,Distal subtotal and distal near-total (Child-type).
+100,All pancreatectomy,General Surgery,Medium,N,8,"48140, 48146, 48148, 48150, 48152, 48153, 48154, 48155",,"Distal, ampullectomy, Whipple variants, and total pancreatectomy."
+101,Total gastrectomy,General Surgery,Simple,N,3,"43620, 43621, 43622",,"With esophagoenterostomy, Roux-en-Y, or pouch."
+102,Distal / partial gastrectomy,General Surgery,Simple,N,3,"43631, 43632, 43633",,"With gastroduodenostomy, gastrojejunostomy, or Roux-en-Y."
+103,All gastrectomy (oncologic - excludes bariatric sleeve),General Surgery,Medium,Y,6,"43620, 43621, 43622, 43631, 43632, 43633",43775,Sleeve gastrectomy (43775) is bariatric and excluded.
+104,Esophagectomy (any approach),General Surgery,Medium,N,5,"43112, 43117, 43122, 43123, 43124",,"Includes McKeown, Ivor Lewis, transhiatal/abdominal variants, and esophagectomy without reconstruction."
+105,Hepatectomy / liver resection,General Surgery,Medium,N,4,"47120, 47122, 47125, 47130",,"Partial lobectomy, trisegmentectomy, total left lobectomy, total right lobectomy."
+106,Carotid endarterectomy (CEA),Vascular,Simple,N,1,35301,,Single code captures CEA by neck incision.
+107,Open abdominal aortic aneurysm (AAA) repair,Vascular,Medium,N,5,"35081, 35082, 35092, 35102, 35103",,"Open infrarenal AAA + iliac extensions, intact and ruptured."
+108,Endovascular AAA repair (EVAR),Vascular,Medium,N,9,"34701, 34703, 34705, 34706, 34800, 34802, 34803, 34804, 34805",,Both current (347xx) and legacy (348xx) EVAR code sets.
+109,All AAA repair (open + endovascular),Vascular,Complex,N,14,"34701, 34703, 34705, 34706, 34800, 34802, 34803, 34804, 34805, 35081, 35082, 35092, 35102, 35103",,Includes ruptured cases.
+110,"Open AAA repair, ruptured only",Vascular,Simple,N,3,"35082, 35092, 35103",,"Ruptured infrarenal, ruptured iliac extension, and ruptured visceral."
+111,Lower extremity bypass with vein conduit,Vascular,Medium,N,7,"35556, 35558, 35566, 35571, 35583, 35585, 35587",,Includes in-situ vein bypasses (35583/85/87) and reversed vein bypasses.
+112,Lower extremity bypass with prosthetic (non-vein) conduit,Vascular,Medium,N,4,"35656, 35661, 35666, 35671",,"Femoral-popliteal, femoral-femoral, fem-distal, popliteal-distal."
+113,All lower extremity bypass (vein + prosthetic),Vascular,Complex,N,11,"35556, 35558, 35566, 35571, 35583, 35585, 35587, 35656, 35661, 35666, 35671",,Combined LE bypass cohort.
+114,Aortobifemoral bypass,Vascular,Simple,N,1,35646,,Prosthetic aortobifemoral - the standard inflow procedure for aortoiliac disease.
+115,Open lung lobectomy,Thoracic,Simple,N,1,32480,,Open single-lobe lobectomy.
+116,VATS lobectomy,Thoracic,Simple,N,1,32663,,Thoracoscopic single-lobe lobectomy.
+117,All lobectomy (open + VATS),Thoracic,Medium,N,5,"32480, 32482, 32486, 32663, 32670",,"Single lobe and bilobectomy, open and VATS; includes sleeve lobectomy (32486)."
+118,Pneumonectomy,Thoracic,Simple,N,2,"32440, 32442",,Standard and sleeve pneumonectomy.
+119,All anatomic lung resection (segmentectomy + lobectomy + pneumonectomy),Thoracic,Medium,N,10,"32440, 32442, 32480, 32482, 32484, 32486, 32488, 32663, 32669, 32670",,"Open + VATS, segment/lobe/bilobe/pneumonectomy."
+120,VATS wedge resection,Thoracic,Simple,N,2,"32666, 32667",,Initial and additional ipsilateral wedge resections.
+121,All VATS therapeutic procedures,Thoracic,Complex,N,19,"32650, 32651, 32652, 32653, 32654, 32655, 32656, 32658, 32659, 32661, 32662, 32663, 32664, 32666, 32667, 32669, 32670, 32672, 32673",,Excludes diagnostic-only thoracoscopy (32601-32609).
+122,Total thyroidectomy,Endocrine / Breast,Medium,N,6,"60240, 60252, 60254, 60260, 60270, 60271",,Includes total/subtotal for malignancy with neck dissection and substernal/transthoracic approaches.
+123,"Thyroid lobectomy (partial or total, unilateral)",Endocrine / Breast,Medium,N,4,"60210, 60212, 60220, 60225",,"Partial and total lobectomy, with or without contralateral subtotal."
+124,All thyroidectomy,Endocrine / Breast,Medium,N,10,"60210, 60212, 60220, 60225, 60240, 60252, 60254, 60260, 60270, 60271",,Lobectomy + total + completion + substernal.
+125,Parathyroidectomy,Endocrine / Breast,Simple,N,2,"60500, 60502",,Initial and re-exploration.
+126,Adrenalectomy,Endocrine / Breast,Simple,N,2,"60540, 60545",,Open adrenalectomy; lap is 60650.
+127,"Mastectomy (simple, modified radical, radical)",Endocrine / Breast,Medium,N,4,"19303, 19305, 19306, 19307",,Excludes lumpectomy/partial.
+128,Partial mastectomy / lumpectomy,Endocrine / Breast,Simple,N,2,"19301, 19302",,With or without axillary lymphadenectomy.
+129,All breast cancer surgery (lumpectomy + mastectomy),Endocrine / Breast,Medium,N,6,"19301, 19302, 19303, 19305, 19306, 19307",,Includes mastectomy for gynecomastia (19300) if added. Conservative cohort starts at 19301.
+130,Craniotomy for brain tumor resection,Neurosurgery,Medium,N,6,"61510, 61512, 61518, 61519, 61520, 61521",,Supratentorial (tumor and meningioma) and infratentorial/posterior fossa tumors.
+131,Craniotomy for evacuation of intracranial hematoma,Neurosurgery,Medium,N,4,"61312, 61313, 61314, 61315",,"Supratentorial and infratentorial, extradural/subdural and intraparenchymal."
+132,Decompressive craniectomy,Neurosurgery,Simple,N,2,"61322, 61323",,With and without lobectomy.
+133,Ventriculoperitoneal (VP) shunt placement,Neurosurgery,Simple,N,1,62223,,"Single code for VP, ventriculopleural, or other distal terminus."
+134,CSF shunt revision / replacement,Neurosurgery,Medium,N,4,"62225, 62230, 62256, 62258",,"Catheter replacement, shunt revision, removal without and with replacement."
+135,Open radical prostatectomy,Urology / Gynecology,Medium,N,4,"55810, 55840, 55842, 55845",,"Perineal and retropubic radical prostatectomy, with or without lymphadenectomy."
+136,Laparoscopic / robotic radical prostatectomy,Urology / Gynecology,Simple,N,1,55866,,Single code captures laparoscopic and robot-assisted radical prostatectomy.
+137,All radical prostatectomy (open + lap/robotic),Urology / Gynecology,Medium,N,5,"55810, 55840, 55842, 55845, 55866",,Open + minimally invasive.
+138,Open nephrectomy (partial + radical),Urology / Gynecology,Medium,N,6,"50220, 50225, 50230, 50234, 50236, 50240",,"Open simple, complicated, radical with LND, with total ureterectomy, and partial."
+139,Laparoscopic nephrectomy (partial + radical + donor),Urology / Gynecology,Medium,N,5,"50543, 50545, 50546, 50547, 50548",,"Lap partial, radical, simple, donor, and with total ureterectomy."
+140,All nephrectomy (open + laparoscopic),Urology / Gynecology,Complex,N,11,"50220, 50225, 50230, 50234, 50236, 50240, 50543, 50545, 50546, 50547, 50548",,Comprehensive nephrectomy cohort.
+141,All nephrectomy excluding donor cases,Urology / Gynecology,Medium,Y,10,"50220, 50225, 50230, 50234, 50236, 50240, 50543, 50545, 50546, 50548",50547,Living donor nephrectomy (50547) excluded.
+142,Total abdominal hysterectomy (open),Urology / Gynecology,Medium,N,5,"58150, 58152, 58180, 58200, 58210",,"Standard TAH, with cystopexy, supracervical, with LN sampling, and radical."
+143,Total laparoscopic hysterectomy,Urology / Gynecology,Medium,N,4,"58570, 58571, 58572, 58573",,"By uterus size, with or without adnexa."
+144,Vaginal hysterectomy,Urology / Gynecology,Medium,N,10,"58260, 58262, 58263, 58267, 58270, 58275, 58280, 58290, 58291, 58294",,All vaginal hysterectomy codes regardless of uterus size or concurrent procedures.
+145,All hysterectomy (abdominal + vaginal + laparoscopic),Urology / Gynecology,Complex,N,28,"58150, 58152, 58180, 58200, 58210, 58260, 58262, 58263, 58267, 58270, 58275, 58280, 58290, 58291, 58294, 58541, 58542, 58544, 58548, 58550, 58552, 58553, 58554, 58570, 58571, 58572, 58573, 58575",,Most inclusive hysterectomy cohort across all approaches.
